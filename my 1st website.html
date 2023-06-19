@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cookbok</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+     var crunch = new Audio();
+    crunch.src = "sources/crunch.mp3";
+  </script>
+</head>
+<body>
+    <div class="header">
+        <div class="headerleft">
+            <p class="logo">My Cookbook</p>
+        </div>
+        <div class="headerright">
+            <ul class="links">
+                <li>
+                    <a href="google.com">header link one</a>
+                </li>
+                <li>
+                    <a href="google.com">header link two</a>
+                </li>
+                <li>
+                    <a href="google.com">header link three</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="box2-1">
+            <div class="box2-1-left_side">
+                <h1 class="box2-1-left_side-Welcome">Welcome to our family cookbook!</h1>
+                <p class="box2-1-left_side-welcometext">This is a small project that i made, it's in the early stages, but slowly it will to evolve to something cool.</small></p>
+                <button class="Box2-1-left_side-button" onmousedown="crunch.play()">Crunch</button>
+            </div>
+        
+            <div class="box2-1-right_side">
+                <p class="box2-1-right-side-box">This is a placeholder for an image.</p>
+            </div>
+        </div>
+    </div>
+    <div class="Box3">
+        <h1 class="box3-Navigation">Recipes</h1>
+        <div class="box3-Recipes_group">
+            <div class="box3-Recipes_group-Group-1" >
+                <div class="box3-Recipes_group-Group-1-image-1" id="boxhover"></div>
+                <p class="box3-Recipes_group-Group-1-text-1">Text of group 1</p>
+            </div>
+            <div class="box3-Recipes_group-Group-2">
+                <div class="box3-Recipes_group-Group-2-image-2" id="boxhover2"></div>
+                <p class="box3-Recipes_group-Group-2-text-2">Text of group 2</p>
+            </div>
+            <div class="box3-Recipes_group-Group-3">
+                <div class="box3-Recipes_group-Group-3-image-3" id="boxhover3"></div>
+                <p class="box3-Recipes_group-Group-3-text-3">Text of group 3</p>
+            </div>
+            <div class="box3-Recipes_group-Group-4">
+                <div class="box3-Recipes_group-Group-4-image-4" id="boxhover4"></div>
+                <p class="box3-Recipes_group-Group-4-text-4">Text of group 4</p>
+            </div>
+        </div>
+    </div>
+    <div class="box4">
+        <p class="box4-2">This lamb is so undercooked, it's following Mary to school!</h1>
+        <p class="box4-3">-Gordon Ramsay</p>
+    </div>
+    <div class="box5">
+        <div class="box5-text" >
+            <p class="box5-text-call">Call to action! It's time!</p>
+            <p class="box5-text-small_text">Sign up for our e-newsletter</p>
+        </div>
+        <button class="box5-button">Sign up</button>
+    </div>
+    <div class="footer">
+        <p>Copyright © The Odin Project 2021</p>
+    </div>
+</body>
+</html>
