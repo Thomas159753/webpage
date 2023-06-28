@@ -1,0 +1,28 @@
+{
+  "name": "webpage",
+  "version": "1.0.0",
+  "description": "udating the original to next virsion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomas159753/webpage.git"
+  },
+  "author": "Thomas Tsiotsias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thomas159753/webpage/issues"
+  },
+  "homepage": "https://github.com/Thomas159753/webpage#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
