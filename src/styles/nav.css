@@ -1,0 +1,55 @@
+.body{
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1vh;
+}
+.body > h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh;
+}
+.body > div:first-of-type{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1vh));
+    justify-content: center;
+}
+.Meals, .Desserts, .Salads{
+    display: grid;
+    justify-content: center;
+    gap: 1vh;
+}
+.Meals img, .Desserts img, .Salads  img{
+    border: 0.5vh solid var(--border-color);
+    border-radius: 0.5vh;
+    box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+.Meals img:hover, .Desserts img:hover, .Salads img:hover{
+    border: 0.5vh solid var(--border-color);
+    box-shadow: none;
+}
+.Meals > p, .Desserts > p, .Salads > p{text-align: center;}
+.body div:first-of-type {
+    font-size: 2vh;
+}
+.body > div:nth-child(3){
+    background-color: #e5e7eb;
+    height: 30vh;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0vh 3vh 0vh 3vh;
+}
+.body > div:nth-child(3) > p:first-of-type{
+    font-size: 3vh;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+}
+.body > div:nth-child(3) > p:nth-child(2){
+    font-size: 2vh;
+    text-align: end;
+}

@@ -1,0 +1,54 @@
+.meals {
+    display: grid;
+    grid-template-rows: auto 10fr;
+    /* overflow-y: scroll; */
+}
+
+.meals > h1{
+    display: flex;
+    justify-content: center;
+    padding: 1vh 0 2vh 0;
+}
+
+.meals > div{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(193px, 1vh));
+    gap: 2vh;
+    justify-content: center;
+}
+
+.meals > div div {
+    border: 0.5vh solid var(--border-color);
+    border-radius: 0.5vh;
+    box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.8);
+    cursor: pointer;
+    width: 193px;
+    display: grid;
+}
+
+.meals > div div p:first-child{
+    font-size: 2vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meals > div div p:nth-child(2){
+    font-size: 1.5vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meals > div div p:nth-child(3){
+    font-size: 1.5vh;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 0 1vh 1vh 0;
+}
