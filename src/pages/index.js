@@ -1,7 +1,9 @@
 import createHeader from "./header";
 import createNav from "./nav-bar";
 import createFooter from "./footer";
-import createMeals from "./menu";
+import createMeals from "./meals";
+import createDesserts from "./desserts";
+import createSalads from "./salads"
 import '../styles/style.css';
 
 const diployWebsite = (() => {
@@ -23,11 +25,31 @@ const diployWebsite = (() => {
         MealsListeners()
     })
     
+    const createDessertsPage = (() => {
+        content.textContent = "";
+        createHeader();
+        createDesserts()
+        createFooter();
+        MealsListeners()
+    })
+
+    const createSaladsPage = (() => {
+        content.textContent = "";
+        createHeader();
+        createSalads()
+        createFooter();
+        MealsListeners()
+    })
+    
+
     const HomePagelisteners = (() => {
         const meals = document.getElementsByClassName('Meals')[0];
         const desserts = document.getElementsByClassName('Desserts')[0];
-        meals.addEventListener('click', createMealsPage);
+        const salads = document.getElementsByClassName('Salads')[0];
         const home = document.getElementsByClassName('Home')[0];
+        meals.addEventListener('click', createMealsPage);
+        desserts.addEventListener('click', createDessertsPage);
+        salads.addEventListener('click', createSaladsPage);
         home.addEventListener('click', createHomePage);
     })
 

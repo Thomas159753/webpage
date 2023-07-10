@@ -9,8 +9,8 @@ const createMeals = (() => {
 
     mealsRecipes.prototype.createDivs = function () {
         const divMeal = document.createElement('div');
-        divMeal.classList.add(this.name)
-
+        let str = this.name.replace(/\s+/g, '');
+        divMeal.classList.add(str);
         const text1 = document.createElement('p');
         text1.textContent = this.name
         const text2 = document.createElement('p');
